@@ -1,0 +1,35 @@
+create database if not exists XSQJ;
+use XSQJ;
+
+CREATE TABLE studentlist
+(
+   
+   
+   username      VARCHAR(10)  not null,
+   pwd       	 VARCHAR(10) not null,
+   name   		 VARCHAR(10),
+   stuNum    	 VARCHAR(9) unique,
+   sex		 	 VARCHAR(1) ,  
+   major		 VARCHAR(10),
+   reason		 TEXT,
+  state 		 VARCHAR(5)  not null,
+    PRIMARY KEY (username)
+    
+) DEFAULT CHARSET=utf8;
+
+insert into studentlist values ('user', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('user2', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('user3', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('user4', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('user5', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('user6', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('user7', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('user8', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('user9', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('userA', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('userB', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('userC', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('userD', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('userE', 'user', null, null,null,null,null,'未批准');
+insert into studentlist values ('userF', 'user', null, null,null,null,null,'未批准');
+

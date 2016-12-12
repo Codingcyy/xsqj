@@ -1,0 +1,10 @@
+create database if not exists XSQJ;
+use XSQJ;
+
+CREATE TABLE adminlist
+(
+   username      VARCHAR(10)  not null,
+   pwd       	 VARCHAR(10) not null,
+    PRIMARY KEY (username)
+) DEFAULT CHARSET=utf8;
+insert into adminlist values ('admin', 'admin');
